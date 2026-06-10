@@ -10,13 +10,15 @@ class Carteira:
       return self.saldo*0.85
     else:
       return val_yuan
+      
   def __add__(self, val_yuan):
-    if self.moeda != 'YUAN':
+    if self.moeda != 'CNY':
       return self.saldo + self.converter(val_yuan)
     else:
       return self.saldo + val_yuan
+      
   def __sub__(self, val_yuan):
-    if self.moeda != 'YUAN':
+    if self.moeda != 'CNY':
       return self.saldo - self.converter(val_yuan)
     else:
       return self.saldo - val_yuan
