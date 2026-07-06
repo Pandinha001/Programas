@@ -1,3 +1,5 @@
+#lab8
+
 class Carteira:
   def __init__(self, moeda: str, saldo: float):
     self.moeda = moeda
